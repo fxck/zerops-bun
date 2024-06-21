@@ -3,6 +3,7 @@ zerops:
     build:
       prepareCommands:
         - curl -fsSL https://bun.sh/install | bash
+        - bun --help
       buildCommands:
         - bun install
         - bun run build
