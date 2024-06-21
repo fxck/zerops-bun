@@ -6,10 +6,12 @@ zerops:
       buildCommands:
         - bun install
         - bun run build
-      deploy:
+      deployFiles:
         - ./build
         - package.json
     run:
       prepareCommands:
         - curl -fsSL https://bun.sh/install | bash
-      start: NODE_ENV=production bun start
+      envVariables:
+        NODE_ENV: production
+      start: bun start
