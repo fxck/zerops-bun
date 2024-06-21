@@ -14,4 +14,7 @@ zerops:
         - curl -fsSL https://bun.sh/install | bash
       envVariables:
         NODE_ENV: production
+      ports:
+        - port: 3000
+          httpSupport: true        
       start: bun start
