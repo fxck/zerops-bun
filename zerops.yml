@@ -1,5 +1,6 @@
 zerops:
   - setup: svelte
+    os: ubuntu
     build:
       prepareCommands:
         - curl -fsSL https://bun.sh/install | bash
@@ -10,6 +11,7 @@ zerops:
         - ./build
         - package.json
     run:
+      os: ubuntu
       prepareCommands:
         - curl -fsSL https://bun.sh/install | bash
       envVariables:
